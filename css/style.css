@@ -23,11 +23,12 @@ header {
     justify-content: space-between;
     font-weight: 700;
     padding-left: 40px;
-    height: 100px;
+    height: 10vh;
     background-color: #fdbb40;
 }
 
 header h1 {
+    flex: 1 0 auto;
     margin-top: 40px;
     display: inline-block;
 }
@@ -46,8 +47,9 @@ main {
 
 main .burger-name {
     border: none;
-    font-size: 28px;
+    font-size: 24px;
     margin-bottom: 40px;
+    width: 200px;
 }
 
 main .burger-name:focus, #coupon:focus {
@@ -69,8 +71,16 @@ form > div {
     width: 50%;
 }
 
+form > div > div {
+    display: inline-block;
+}
+
+form > div > div:first-child {
+    width: 65%;
+}
+
 form img {
-    width: 10%;
+    width: 20%;
     vertical-align: middle;
     margin-right: 10px;
 }
@@ -100,6 +110,7 @@ main #price {
     margin: 0 auto;
     border: none;
     border-radius: 5px;
+    font-size: 18px;
     font-weight: bold;
     display: block;
     cursor: pointer;
@@ -122,4 +133,62 @@ footer {
 footer * {
     line-height: 80px;
     display: inline-block;
+}
+
+@media all and (max-width: 575px) {
+    .container {
+        width: 100%;
+    }
+
+    header {
+        padding-left: 20px;
+    }
+
+    header img {
+        position: initial;
+        height: 100%;
+    }
+    
+    main {
+        padding: 20px;
+    }
+
+    main .burger-name {
+        margin-bottom: 30px;
+    }
+
+    form input {
+        margin: 0;
+    }
+
+    main #coupon {
+        margin: 30px 0 30px 10px;
+        width: 130px;
+    }
+}
+
+@media all and (max-width: 768px) {
+
+    main {
+        padding: 25px;
+    }
+
+    form img {
+        width: 30px;
+    }
+
+    form > div {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 992px) {
+    header h1 {
+        font-size: 23px;
+        margin-top: 40px;
+    }
+
+    main {
+        padding: 20px;
+    }
 }
