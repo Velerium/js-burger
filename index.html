@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assemble your burger!</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <form>
+
+        <input type="checkbox" class="ingredient" id='cheese' name='cheeseIngredient' value="5">
+        <label for="cheese">Cheese</label>
+
+        <input type="checkbox" class="ingredient" id='tomato' name='tomatoIngredient' value="3">
+        <label for="tomato">Tomato</label>
+
+        <input type="checkbox" class="ingredient" id='egg' name='eggIngredient' value="4">
+        <label for="egg">Egg</label>
+
+        <input type="checkbox" class="ingredient" id='lettuce' name='lettuceIngredient' value="7">
+        <label for="lettuce">Lettuce</label>
+
+        <input type="checkbox" class="ingredient" id='mustard' name='mustardIngredient' value="1">
+        <label for="mustard">Mustard</label>
+
+        <input type="checkbox" class="ingredient" id='ketchup' name='ketchupIngredient' value="2">
+        <label for="ketchup">Ketchup</label>
+
+    </form>
+
+    <button id="price">Calculate</button>
+
+    <div id="output"></div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
