@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #fff5e2;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+    background-color: #fff;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    padding-left: 40px;
+    height: 100px;
+    background-color: #fdbb40;
+}
+
+header h1 {
+    margin-top: 40px;
+    display: inline-block;
+}
+
+header img {
+    height: 180%;
+    position: relative;
+    left: 50px;
+    bottom: 25px;
+}
+
+main {
+    flex: 1 0 auto;
+    padding: 40px;
+}
+
+main .burger-name {
+    border: none;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+main > div {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+main form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form > div {
+    margin-bottom: 30px;
+    width: 50%;
+}
+
+main #coupon {
+    margin-bottom: 20px;
+    background-color: #fff5e2;
+    border: none;
+    padding: 5px;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+main #price {
+    background-color: #fdbb40;
+    padding: 10px 20px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: block;
+    cursor: pointer;
+}
+
+main #price:active {
+    background-color: #dfa842;
+    transform: translateY(2px);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    background-color: #d33359;
+    padding: 0 40px;
+    color: #fff;
+}
+
+footer * {
+    line-height: 80px;
+    display: inline-block;
+}

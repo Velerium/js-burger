@@ -5,39 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assemble your burger!</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     
-    <form>
+    <div class="container">
+        <header>
+            <h1>Create Your Burger</h1>
+            <img src="./img/burger-top.png" alt="">
+        </header>
 
-        <input type="checkbox" class="ingredient" id='cheese' name='cheeseIngredient' value="5">
-        <label for="cheese">Cheese</label>
+        <main>
 
-        <input type="checkbox" class="ingredient" id='tomato' name='tomatoIngredient' value="3">
-        <label for="tomato">Tomato</label>
+            <input class="burger-name" type="text" placeholder="Name Your Burger">
+            
+            <div>Ingredients</div>
+            <form>
 
-        <input type="checkbox" class="ingredient" id='egg' name='eggIngredient' value="4">
-        <label for="egg">Egg</label>
+                <div>
+                    <input type="checkbox" class="ingredient" id='cheese' name='cheeseIngredient' value="5">
+                    <label for="cheese">Cheese</label>
+                </div>
 
-        <input type="checkbox" class="ingredient" id='lettuce' name='lettuceIngredient' value="7">
-        <label for="lettuce">Lettuce</label>
+                <div>
+                    <input type="checkbox" class="ingredient" id='tomato' name='tomatoIngredient' value="3">
+                    <label for="tomato">Tomato</label>
+                </div>
 
-        <input type="checkbox" class="ingredient" id='mustard' name='mustardIngredient' value="1">
-        <label for="mustard">Mustard</label>
+                <div>
+                    <input type="checkbox" class="ingredient" id='egg' name='eggIngredient' value="4">
+                    <label for="egg">Egg</label>
+                </div>
 
-        <input type="checkbox" class="ingredient" id='ketchup' name='ketchupIngredient' value="2">
-        <label for="ketchup">Ketchup</label>
+                <div>
+                    <input type="checkbox" class="ingredient" id='lettuce' name='lettuceIngredient' value="7">
+                    <label for="lettuce">Lettuce</label>
+                </div>
 
-    </form>
+                <div>
+                    <input type="checkbox" class="ingredient" id='mustard' name='mustardIngredient' value="1">
+                    <label for="mustard">Mustard</label>
+                </div>
 
-    <input id="coupon" type="textarea" size="55" placeholder="Insert code 'BK10' for a 10% price off, or other codes you may have.">
-    
-    <div>
-        <button id="price">Calculate</button>
+                <div>
+                    <input type="checkbox" class="ingredient" id='ketchup' name='ketchupIngredient' value="2">
+                    <label for="ketchup">Ketchup</label>
+                </div>
+
+            </form>
+
+            <span>Discount coupon</span>
+            <input id="coupon" type="textarea" size="55" placeholder="12345ABCDEF">
+            
+            
+            <button id="price">Calculate</button>
+        
+        </main>
+
+        <footer>
+            <h2>Your Price</h2>
+            <h1 id="result"></h1>
+        </footer>
+
     </div>
-
-    <div id="output"></div>
 
     <script src="./js/script.js"></script>
 </body>

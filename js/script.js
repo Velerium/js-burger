@@ -1,4 +1,4 @@
-var short = document.getElementById('output');
+var short = document.getElementById('result');
 var food = document.getElementsByClassName('ingredient');
 var price = document.getElementById('price');
 var coupon = document.getElementById('coupon');
@@ -23,7 +23,7 @@ function priceCalc() {
     if (coupon.value === 'BK10') {
         finalPrice = finalPrice * 0.9;
     } else if (coupon.value === 'Ottavio') {
-        finalPrice = 0.50 // Ottavio, this is for you~
+        finalPrice = 0.50; // Ottavio, this is for you~
     }
 
 short.innerHTML = finalPrice.toFixed(2) + '€';
