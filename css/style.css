@@ -36,7 +36,7 @@ header img {
     height: 180%;
     position: relative;
     left: 50px;
-    bottom: 25px;
+    bottom: 20px;
 }
 
 main {
@@ -47,12 +47,16 @@ main {
 main .burger-name {
     border: none;
     font-size: 28px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+}
+
+main .burger-name:focus, #coupon:focus {
+    outline: none;
 }
 
 main > div {
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 main form {
@@ -61,12 +65,28 @@ main form {
 }
 
 form > div {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     width: 50%;
 }
 
+form img {
+    width: 10%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+form input {
+    margin: 0 5px 0 10px;
+    vertical-align: middle;
+    border-color: #ccc;
+}
+
+form label {
+    color: red;
+}
+
 main #coupon {
-    margin-bottom: 20px;
+    margin: 40px 0;
     background-color: #fff5e2;
     border: none;
     padding: 5px;
